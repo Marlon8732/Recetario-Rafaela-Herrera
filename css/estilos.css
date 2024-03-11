@@ -1,0 +1,110 @@
+/* styles.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+.encabezado {
+    
+    
+    display:flex ;
+    
+    justify-content: center;
+    justify-items: center;
+    border-radius: 10px; 
+
+}
+
+.recipe-card {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow: hidden;
+}
+
+/* Estilos para la imagen */
+.recipe-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Estilos para el contenido de la receta */
+.recipe-card article {
+    padding: 20px;
+}
+
+.recipe-card h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+}
+
+.recipe-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #666;
+}
+
+.recipe-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.recipe-card li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    color: #999;
+}
+
+.recipe-card .icon {
+    margin-right: 5px;
+}
+
+.recipe-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #777;
+}
+.recipe-card img {
+   width: 250PX;
+}
+
+
+/* Estilos para el botón de reproducción */
+.recipe-card .button {
+    display: inline-block;
+    background-color: #ff6347;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.recipe-card .button:hover {
+    background-color: #e74c3c;
+}
+
+/* Estilos para la versión móvil */
+@media (max-width: 768px) {
+    .recipe-card {
+        flex-direction: column;
+    }
+
+    .recipe-card aside,
+    .recipe-card article {
+        width: 100%;
+    }
+
+    .recipe-card img {
+        height: 200px;
+    }
+}
