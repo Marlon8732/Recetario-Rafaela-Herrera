@@ -10,15 +10,22 @@ body {
 .encabezado {
     
     
-    display:flex ;
-    
+    display:flex ;    
     justify-content: center;
-    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px; /* Ajusta según sea necesario */
     border-radius: 10px; 
 
 }
+.encabezado img {
+    width: 300px;
+}
+    
 
 .recipe-card {
+    width: 250;
     display: flex;
     background-color: #ffffff;
     border-radius: 10px;
@@ -29,7 +36,7 @@ body {
 
 /* Estilos para la imagen */
 .recipe-card img {
-    width: 100%;
+    width: 250px;
     height: auto;
     object-fit: cover;
 }
@@ -73,9 +80,7 @@ body {
     line-height: 1.5;
     color: #777;
 }
-.recipe-card img {
-   width: 250PX;
-}
+
 
 
 /* Estilos para el botón de reproducción */
