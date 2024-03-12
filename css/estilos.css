@@ -37,6 +37,10 @@ body {
     margin: 20px;
     overflow: hidden;
 }
+.recipe-card aside {
+    width: 600px; /* Puedes ajustar el valor según tus necesidades */
+}
+
 
 /* Estilos para la imagen */
 .recipe-card img {
